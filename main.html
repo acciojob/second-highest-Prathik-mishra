@@ -17,7 +17,8 @@
 			        secondLargest = largest;
 			        largest = arr[i];
 			    }
-			    else if(arr[i]<largest && secondLargest>arr[i]){
+			    else if(arr[i]<largest && secondLargest<arr[i]){
+				
 			        secondLargest=arr[i]
 			    } 
 			}
@@ -29,6 +30,7 @@
 			}
 		}
 
+		
 		function Main() {
 			var n = prompt("Enter the number of elements");
 			var arr = [];
